@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/eightdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/tendp"
+        app:cardElevation="@dimen/eightdp">
+        <LinearLayout
+            android:layout_margin="@dimen/eightdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/coinIcon"
+                app:srcCompat="@mipmap/ic_launcher_round"
+                android:layout_width="@dimen/sixtydp"
+                android:layout_height="@dimen/sixtydp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/eightdp">
+
+                <LinearLayout
+                    android:id="@+id/section_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentLeft="true">
+
+                    <TextView
+                        android:id="@+id/coin_symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTC"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="|"
+                        android:layout_marginStart="@dimen/tendp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/coin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bitcoin"
+                        android:layout_marginStart="@dimen/tendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/section_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/price_usd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10,000"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_below="@id/section_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1h:"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/one_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24h:"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/twenty_four_hour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/section_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7d:"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginBottom="@dimen/eightdp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/seven_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/sixteendp"
+                        android:layout_marginRight="@dimen/sixteendp"
+                        android:layout_marginBottom="@dimen/eightdp"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
