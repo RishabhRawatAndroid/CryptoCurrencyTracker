@@ -77,8 +77,8 @@ class CoinAdapter(recyclerView: RecyclerView,internal var activity: Activity,var
         item.coinsymbol.text=coinModel.symbol
         item.coinPrice.text=coinModel.price_usd
         item.oneHourChange.text=coinModel.percent_change_1h+"%"
-        item.twentyFourChange.text=coinModel.percentage_change_24h+"%"
-        item.sevenDayChange.text=coinModel.percentge_change_7d+"%"
+        item.twentyFourChange.text=coinModel.percent_change_24h+"%"
+        item.sevenDayChange.text=coinModel.percent_change_7d+"%"
 
         Picasso.with(activity.baseContext)
                 .load(StringBuilder(Common.imageurl).append(coinModel.symbol!!.toLowerCase())
@@ -92,19 +92,19 @@ class CoinAdapter(recyclerView: RecyclerView,internal var activity: Activity,var
                     Color.parseColor("#32CD32")
                 )
 
-//        item.twentyFourChange
-//                .setTextColor(if(coinModel.percentage_change_24h!!.contains("-"))
-//                    Color.parseColor("#FF0000")
-//                else
-//                    Color.parseColor("#32CD32")
-//                )
-//
-//        item.sevenDayChange
-//                .setTextColor(if(coinModel.percentge_change_7d!!.contains("-"))
-//                    Color.parseColor("#FF0000")
-//                else
-//                    Color.parseColor("#32CD32")
-//                )
+        item.twentyFourChange
+                .setTextColor(if(coinModel.percent_change_24h!!.contains("-"))
+                    Color.parseColor("#FF0000")
+                else
+                    Color.parseColor("#32CD32")
+                )
+
+        item.sevenDayChange
+                .setTextColor(if(coinModel.percent_change_7d!!.contains("-"))
+                    Color.parseColor("#FF0000")
+                else
+                    Color.parseColor("#32CD32")
+                )
     }
 
     fun setLoaded()

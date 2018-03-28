@@ -7,8 +7,8 @@ class CoinModel {
     var symbol:String?=null
     var price_usd:String?=null
     var percent_change_1h:String?=null
-    var percentage_change_24h:String?=null
-    var percentge_change_7d:String?=null
+    var percent_change_24h:String?=null
+    var percent_change_7d:String?=null
 
     constructor()
 
@@ -18,8 +18,8 @@ class CoinModel {
         this.symbol = symbol
         this.price_usd = price_usd
         this.percent_change_1h = percent_change_1h
-        this.percentage_change_24h = percentage_change_24h
-        this.percentge_change_7d = percentge_change_7d
+        this.percent_change_24h = percentage_change_24h
+        this.percent_change_7d = percentge_change_7d
     }
 
 }
